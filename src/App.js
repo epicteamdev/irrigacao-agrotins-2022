@@ -29,9 +29,7 @@ ChartJS.register(
 export const options = {
   responsive: true,
   plugins: {
-    legend: {
-      position: 'top',
-    },
+    labels:{color: white},
     title: {
       display: true,
       text: 'Medição Geral',
@@ -43,6 +41,14 @@ export const options = {
   },
     scales: {
       x: {
+        title: {
+          color: 'red',
+          display: true,
+          text: 'Tempo',
+          font: {
+            size: 24
+          }
+        },
         grid: {
           color: 'grey',
           borderColor: 'red',
@@ -50,9 +56,21 @@ export const options = {
         },
         ticks: {
           color: 'white',
+          font: {
+            size: 14,
+            weight: 'bold',
+          }
         }
       },
       y: {
+        title: {
+          color: 'red',
+          display: true,
+          text: 'Porcentagem',
+          font: {
+            size: 24,
+          }
+        },
         grid: {
           color: 'gray',
           borderColor: 'red',
@@ -60,6 +78,10 @@ export const options = {
         },
         ticks: {
           color: 'white',
+          font: {
+            size: 14,
+            weight: 'bold',
+          }
         }
       }
     }
@@ -107,11 +129,9 @@ function App() {
           </CardBody>
         </Card>
         <Card
-          style={{ width: '30%', borderRadius: '20px', padding: 20, boxShadow: '10px, 5px, 5px,5px 0.4', backgroundColor: 'transparent' }}>
+          style={{ width: '30%', height: '350px', borderRadius: '20px', padding: 20, boxShadow: '5px 5px 5px 5px white', backgroundColor: 'white' }}>
           <CardBody>
-            <ChartContainer >
-              <Line options={options} data={data} />
-            </ChartContainer>
+    
           </CardBody>
         </Card>
       </Body>
