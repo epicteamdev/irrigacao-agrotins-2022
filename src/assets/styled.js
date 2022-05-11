@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 90%;
+    width: 95%;
     heitgh: auto;
     margin-left: 2.5%;
     display: flex;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const ChartContainer = styled.div`
-  width: 89.5%;
+  width: 100%;
   diplay: flex;
   background-color: white;
   padding: 20px;
@@ -22,7 +22,7 @@ export const ChartContainer = styled.div`
 export const Header = styled.div`
   width: 100%;
   height: 130px;
-  background-color: #708090;
+  background-color: #738DCF;
   display: flex;
   flex-direction: row;
   box-shadow: 5px 5px 5px 5px black;
@@ -31,7 +31,7 @@ export const Header = styled.div`
 export const LogList = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  height: "30vh";
+  height: "auto";
   width: 100%;
 `;
 
@@ -44,6 +44,6 @@ export const Footer = styled.div`
 `;
 
 export const LogContainer = styled.div`
-    height: 200px;
+    height: 30vh;
     overflow-y: scroll;
 `;
