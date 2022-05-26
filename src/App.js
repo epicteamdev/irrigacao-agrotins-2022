@@ -26,6 +26,7 @@ import EPIC from "./assets/img/logo-epicOFI.png";
 
 import ricardo from "./assets/img/drRicardo.jpeg";
 import edeilson from "./assets/img/profEdeilson.jpeg";
+import warley from "./assets/img/warley.jpeg";
 import eliel from "./assets/img/profEliel.jpeg";
 import marcos from "./assets/img/MarcosGilmario.jpg";
 
@@ -325,7 +326,7 @@ function App() {
           <Row style={{ borderRadius: 5 }}>
             <Card
               style={{
-                width: "110%",
+                width: "100%",
                 height: "auto",
                 display: "flex",
                 flexDirection: "column",
@@ -424,9 +425,9 @@ function App() {
                       alt="edeilson"
                     />
                     <img
-                      style={{ height: "28vh", objectFit: "cover" }}
-                      src={edeilson}
-                      alt="edeilson"
+                      style={{ width: 150, height: "28vh", objectFit: "cover" }}
+                      src={warley}
+                      alt="warley"
                     />
                     <img
                       style={{ height: "28vh", objectFit: "cover" }}
@@ -446,7 +447,7 @@ function App() {
           <Row>
             <Card
               style={{
-                width: "110%",
+                width: "100%",
                 height: "auto",
                 borderRadius: "5px 5px 5px 5px",
                 backgroundColor: "#EFF4FF",
